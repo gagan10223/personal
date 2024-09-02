@@ -1,0 +1,63 @@
+body {
+    color: #f8e6e6; 
+    background-color: #518f94;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #426d72;
+    height: 60px; /* Set the height of the header */
+    position: fixed; /* Fix the header to the top */
+    top: 0; /* Align it to the top */
+    left: 0; /* Align it to the left */
+    padding: 0; /* Remove padding */
+    z-index: 1000; /* Ensure the header stays on top */
+  }
+  
+  .header .left, .header .right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header .right {
+    justify-content: flex-end;
+  }
+  
+  h1, .placeholder {
+    font-size: 2em;
+    margin: 0 1em;
+  }
+ 
+.main {
+    width: 100%;
+    margin: 2em;
+    margin-top: 100px; }  
+  .p{
+    margin:1em;
+  }
+  
+  
+  .right {
+    flex: 1;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    background-color: #426d72;
+    padding-left: 15px;
+
+  }
+  
+  .experience-item {
+    margin-bottom: 1em;
+  }
+  
+  
