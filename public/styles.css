@@ -1,63 +1,129 @@
+/* Global Styles */
 body {
-    color: #f8e6e6; 
-    background-color: #518f94;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background-color: #426d72;
-    height: 60px; /* Set the height of the header */
-    position: fixed; /* Fix the header to the top */
-    top: 0; /* Align it to the top */
-    left: 0; /* Align it to the left */
-    padding: 0; /* Remove padding */
-    z-index: 1000; /* Ensure the header stays on top */
-  }
-  
-  .header .left, .header .right {
-    display: flex;
-    align-items: center;
-  }
-  
-  .header .right {
-    justify-content: flex-end;
-  }
-  
-  h1, .placeholder {
-    font-size: 2em;
-    margin: 0 1em;
-  }
- 
-.main {
-    width: 100%;
-    margin: 2em;
-    margin-top: 100px; }  
-  .p{
-    margin:1em;
-  }
-  
-  
-  .right {
-    flex: 1;
-  }
-  
-  h2 {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-    background-color: #426d72;
-    padding-left: 15px;
+  color: #f8e6e6;
+  background-color: #518f94;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  }
-  
-  .experience-item {
-    margin-bottom: 1em;
-  }
-  
-  
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #333; /* Black background for the header */
+  height: 80px; /* Increased the height */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 10px;
+  padding-left: 0px; /* Added more padding for spacing */
+}
+
+/* Left Section of Header */
+.header .left {
+  display: flex;
+  align-items: center;
+}
+
+/* Right Section of Header */
+.header .right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; /* This lowers the right section */
+  padding-right: 1em; /* Keep the right padding */
+}
+
+/* Header Text Styles */
+h1, .placeholder {
+  font-size: 2em;
+  margin: 0 1em;
+  color: white; /* Ensure text is visible against black background */
+}
+
+/* Main Content */
+.main {
+  width: 100%;
+  margin: 2em;
+  margin-top: 120px; /* Adjusted to accommodate increased header height */
+}
+
+.p {
+  margin: 1em;
+}
+
+/* Professional Experience and Project Section */
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  background-color: #426d72;
+  padding-left: 15px;
+}
+
+.experience-item {
+  margin-bottom: 1em;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+}
+
+.dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Link Styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7c4d4d; /* Hover color for links */
+}
+
+/* Certificates */
+.certificate-item {
+  margin-bottom: 1em;
+}
+
+.certificate-item a {
+  color: inherit; /* Ensure links inside certificate items inherit color */
+}
+
+.certificate-item a:hover {
+  color: #5a3f3f; /* Hover color for certificate links */
+}
+
+/* Technical Acumen Section */
+.certificate-item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.certificate-item ul li {
+  margin-bottom: 0.5em;
+}
